@@ -1,58 +1,44 @@
+# News Test Project
 
-### What is this repository for? ###
+This is a sample Spring Boot application used to demonstrate a basic news management system. It exposes REST endpoints for creating, updating and retrieving news entries and provides a simple web interface built with Thymeleaf and Bootstrap.
 
-Simple News Manager using spring boot 
+## Tech stack
 
-### Tech: ###
-Tech stack used behind this test project :
+- Spring Boot
+- Hibernate (JPA)
+- Maven
+- Thymeleaf
+- Bootstrap, jQuery and toastr for the UI
 
-* Spring Boot - For backend web application.
-* Apache Hibernate - For ORM.
-* Apache Maven - As a build tool.
-* Thymeleaf- For template engine.
-* Twitter Bootstrap - For building the UI.
-* jQuery - For validation.
-* toastr - For notification.
+## Requirements
 
-### Requirements: ###
-Things you need to have installed to run the test project. 
+- Java 8 or later
+- Maven
+- Git
 
- - Git
- - Apache Maven
+## Running the application
 
-### Running the application: ###
+Clone this repository and run the application using Maven:
 
- - Clone the project.
+```bash
+git clone <repository-url>
+cd sprint-boot-sample-project
+mvn spring-boot:run
+```
 
-    ```
-    git clone https://dustushishu@bitbucket.org/dustushishu/news-test-project.git
-    ```
-    
- - Go to the project.
-    ```
-    cd news-test-project
-    ```
-    
- - Build the project with maven.
-   ```
-   mvn spring-boot:run
-   ```
-   
- - The web application is deployed in a tomcat server (port 8080) embedded in sprint boot.
-     -  Go to  `http://localhost:8080/` to see the application.
-  
+The application will start on `http://localhost:8080`.
 
- 
-### Limitations / What could be improved: ###
--   More Unit/Integration tests.
--   More granular exception handling.
--   Removing some Redundant/Duplicate code usage.
--   Single api path for different news format.
--   UI improvements.
+## Running tests
 
- 
+Execute the unit and integration tests with:
 
+```bash
+mvn test
+```
 
+## Improvements
 
-
+- Additional unit/integration tests
+- More granular exception handling
+- UI enhancements
 
