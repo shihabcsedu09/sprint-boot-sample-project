@@ -13,7 +13,9 @@ public class NewsEntityV2 extends NewsEntity {
 
 
     @NotNull
-    @DateTimeFormat(pattern = "YYYY-MM-DD")
+    // Use standard year-month-day format for parsing the publish date
+    // "YYYY" parses week based year which is incorrect here
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "news_publish_date")
     private Date newsPublishDate;
